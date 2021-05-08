@@ -54,15 +54,15 @@ This application is covered under the [MIT](https://opensource.org/licenses/MIT)
 
 `Login/Signup Modal:`
 
-![Screenshot1](./images/screenshot1.png)
+![Screenshot1](https://user-images.githubusercontent.com/74839893/117555446-39858280-b02d-11eb-85f5-70adb12ae1ea.png)
 
 `Book Search:`
 
-![Screenshot2](./images/screenshot2.png)
+![Screenshot2](https://user-images.githubusercontent.com/74839893/117555447-39858280-b02d-11eb-8b36-545e09ef2964.png)
 
 `Saved Books:`
 
-![Screenshot3](./images/screenshot3.png)
+![Screenshot3](https://user-images.githubusercontent.com/74839893/117555449-3a1e1900-b02d-11eb-916b-d35ebac63a21.png)
 
 ### Deployed-Url
 
