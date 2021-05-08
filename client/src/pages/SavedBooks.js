@@ -12,20 +12,19 @@ import Auth from "../utils/auth";
 import { removeBookId } from "../utils/localStorage";
 // import { useEffect } from "react";
 
-import { useQuery, useMutation, } from "@apollo/react-hooks";
+import { useQuery, useMutation } from "@apollo/react-hooks";
 import { QUERY_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
 
 const SavedBooks = () => {
-  const { loading, data } = useQuery(QUERY_ME);
+  const { loading, data, refetch } = useQuery(QUERY_ME);
   const userData = data?.me || {};
   console.log(data);
   console.log(userData);
   // useEffect(() => {
   //   return () => window.location.reload();
   // });
-
-
+  refetch();
 
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
@@ -44,9 +43,10 @@ const SavedBooks = () => {
       if (error) {
         throw new Error("Something went wrong!");
       }
+
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
-      window.location.reload();
+      // window.location.reload();
     } catch (err) {
       console.error(err);
     }
